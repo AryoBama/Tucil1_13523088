@@ -86,7 +86,7 @@ public class ReadFile {
                 }
                 
                 for(int i = 0; i < line.length(); i++){
-                    if((line.charAt(i) != ' ' && currentAlphabet != line.charAt(i)) || !scanner.hasNextLine()){
+                    if((line.charAt(i) != ' ' && currentAlphabet != line.charAt(i)) || (!scanner.hasNextLine() && line.charAt(i) != ' ')){
                         currentAlphabet = line.charAt(i);
                         if (scanner.hasNextLine() || currentAlphabet != newPiece.alphabet){
                             readPiece = false;
@@ -97,7 +97,6 @@ public class ReadFile {
                             if (!grid.isPieceExist(newPiece)){
 
                     
-                                newPiece.centralization();
                                 allPieces.add(newPiece);
                                 grid.addPiece(newPiece);
                                 nPiece--;
@@ -124,13 +123,13 @@ public class ReadFile {
                     }
                     for(int i = 0; i < line.length(); i++){
                         if(line.charAt(i) != ' '){
-                            newPiece.addPoint(y, i);
+                            newPiece.addPoint(i, y);
                         }
                     }
                 }else{
                     for(int i = 0; i < line.length(); i++){
                         if(line.charAt(i) != ' '){
-                            newPiece.addPoint(y, i);
+                            newPiece.addPoint(i,y);
                         }
                     }
                 }
