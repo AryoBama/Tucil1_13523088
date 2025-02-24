@@ -17,9 +17,18 @@ Berikut penjelasan algoritma bruteforce dalam mencari solusi pada gim iq puzzler
 -	Ulangi langkah 1-7 hingga semua kemungkinan telah dicoba
 
 ## Getting Started
-1. Unduh atau klon repository ini
+1. Untuk menjalankan program ini, pastikan sudah tersedia Java development kit (JDK) di laptop anda
+2. Unduh atau klon repository ini
    ```bash
    https://github.com/AryoBama/Tucil1_13523088.git
    ```
-2. 
+3. Pindah ke direktori project
+   ```bash
+   Tucil1_13523088
+   ```
+4. Jalankan program
+   ```bash
+   java -cp bin src.Main
+   ```
+   
    
