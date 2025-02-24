@@ -74,18 +74,18 @@ public class Piece {
             }
 
 
-            boolean[][] grid = new boolean[maxX+1][maxY+1];
+            boolean[][] grid = new boolean[maxY+1][maxX+1];
 
             for (Point point: piece){
-                grid[point.getX() + offsetX][point.getY() + offsetY] = true;
+                grid[point.getY() + offsetY][point.getX() + offsetX] = true;
             }
 
-            for (int i = 0; i < maxX+1; i++){
-                for (int j = 0; j < maxY+1; j++){
+            for (int i = 0; i < maxY+1; i++){
+                for (int j = 0; j < maxX+1; j++){
                     if (grid[i][j] == true){
                         System.out.print(Mapping.findColor(this.alphabet) + this.alphabet + Mapping.RESET);
                     }else{
-                        System.out.print("");
+                        System.out.print(" ");
                     }
                 }
                 System.out.println("");
