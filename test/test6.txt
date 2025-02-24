@@ -1,0 +1,7 @@
+AAAAA
+ACCCA
+CCCCA
+BCACA
+BBAAA
+Waktu eksekusi: 3 ms
+Banyak iterasi: 4984

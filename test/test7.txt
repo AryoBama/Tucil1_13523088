@@ -1,0 +1,6 @@
+AAAA
+ACCB
+ACCB
+BBBB
+Waktu eksekusi: 2 ms
+Banyak iterasi: 184

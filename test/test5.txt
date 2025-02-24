@@ -1,0 +1,7 @@
+FBEEA
+FBBAA
+FFIAC
+DDICC
+DDIIC
+Waktu eksekusi: 16293 ms
+Banyak iterasi: 684670072
