@@ -19,4 +19,7 @@ Berikut penjelasan algoritma bruteforce dalam mencari solusi pada gim iq puzzler
 ## Getting Started
 1. Unduh atau klon repository ini
    ```bash
+   https://github.com/AryoBama/Tucil1_13523088.git
+   ```
+2. 
    
