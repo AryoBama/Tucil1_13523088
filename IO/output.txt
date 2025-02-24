@@ -1,0 +1,7 @@
+AABBG
+CADBG
+CCDDG
+EEEFF
+EEFFF
+Waktu eksekusi: 1ms
+Banyak iterasi: 512
