@@ -15,3 +15,8 @@ Berikut penjelasan algoritma bruteforce dalam mencari solusi pada gim iq puzzler
 -	Apabila dalam proses no 4 dan 5 terdapat piece yang tidak menemukan tempat kosong pada papan, coba lakukan semua gerakan rotasi dan refleksi.
 -	Apabila langkah no 6 juga tidak berhasil, lakukan backtracking dengan cara melakukan rotasi dan refleksi pada piece sebelumnya. Kemudian letakkan kembali piece yang gagal ditempatkan.
 -	Ulangi langkah 1-7 hingga semua kemungkinan telah dicoba
+
+## Getting Started
+1. Unduh atau klon repository ini
+   ```bash
+   
