@@ -2,19 +2,35 @@ package src;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import src.menus.GUI;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        boolean UI = false;
 
         System.out.println("Selamat datang di IQ puzzler solver");
+        do { 
+            System.out.println("Ingin menggunakan apa? (ketik angka)\n1. GUI\n2. CLI");
+            String choice = scanner.nextLine();
+            if(choice.equals("1")){
+                UI = true;
+                break;
+            }else if (choice.equals("2")){
+                break;
+            }else{
+                System.out.println("Pilihan tidak valid");
+            }
+            
+        } while (true);
         boolean done = false;
-        while (true){
+        while (true && ! UI){
             String fileName;
 
             do { 
                 System.out.print("Masukkan nama file: ");
                 fileName = scanner.nextLine();
+                fileName = "IO/" + fileName;
                 if(ReadFile.isExistFile(fileName)){
                     System.out.println("Mencari solusi...");
                     break;
@@ -80,5 +96,8 @@ public class Main {
             }
         }
         scanner.close();
+        if (UI){
+            new GUI();
+        }
     }
 }

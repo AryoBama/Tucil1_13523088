@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ReadFile {
 
     public static boolean isExistFile(String fileName) {
-        File file = new File("IO/",fileName);
+        File file = new File(fileName);
         return file.exists();
     }
 
@@ -46,7 +46,6 @@ public class ReadFile {
     }
 
     public static Grid readCase(String fileName, ArrayList<Piece> allPieces){
-        fileName = "IO/" + fileName;
         File file = new File(fileName);
         Grid grid = null;
 
